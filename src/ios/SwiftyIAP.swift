@@ -64,7 +64,7 @@ class SwiftyIAP: CDVPlugin {
             return self.sendResult(.init(status: CDVCommandStatus_ERROR, messageAs: "productId  not found"))
         }
         
-        SwiftyStoreKit.purchaseProduct(productId, quantity: 1, atomically: false) { result in
+        SwiftyStoreKit.purchaseProduct(productId, quantity: 1, atomically: true) { result in
             switch result {
             case .success(let purchase):
                 
