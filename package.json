@@ -1,0 +1,12 @@
+{
+  "name": "cordova-swifty-iap-plugin",
+  "version": "0.0.1",
+  "description": "A Cordova plugin to manage iOS in-app purchases based on SwiftyStoreKit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Coskun Deniz",
+  "license": "MIT",
+  "types": "@types/index.d.ts"
+}

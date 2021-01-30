@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-swifty-iap-plugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>SwiftyIAP</name>
+
+      <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="SwiftyIAP">
+                <param name="ios-package" value="SwiftyIAP" />
+            </feature>
+        </config-file>
+        <js-module name="SwiftyIAP" src="www/SwiftyIAP.js">
+            <clobbers target="SwiftyIAP" />
+        </js-module>
+
+        <source-file src="src/ios/SwiftyIAP.swift" />
+
+        <podspec>
+          <config>
+            <source url="https://github.com/CocoaPods/Specs.git"/>
+          </config>
+          <pods use-frameworks="true">
+            <pod name="SwiftyStoreKit"/>
+        </pods>
+        </podspec>
+            <dependency id="cordova-plugin-add-swift-support"  version="2.0.2"/>
+
+      </platform>
+
+</plugin>
