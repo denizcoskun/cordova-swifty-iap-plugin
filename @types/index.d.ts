@@ -1,6 +1,6 @@
-declare var SwiftyIAP: PluginSwiftyIAP.SwiftyIAP
+declare var SwiftyIAP: CordovaPlugin.SwiftyIAP
 
-declare namespace PluginSwiftyIAP {
+declare namespace CordovaPlugin {
 
     type successHandler<T = any> = (result: T) => any | (() => any)
     type errorHandler<K = any> = (error?: K) => any
@@ -14,13 +14,13 @@ declare namespace PluginSwiftyIAP {
 
 
     type PurchaseErrorCodes = "unknown" |
-                         "clientInvalid" |
-                         "paymentCancelled" |
-                         "paymentInvalid" |
-                         "paymentNotAllowed" |
-                         "storeProductNotAvailable" |
-                         "cloudServicePermissionDenied" |
-                         "cloudServiceNetworkConnectionFailed"
+                              "clientInvalid" |
+                              "paymentCancelled" |
+                              "paymentInvalid" |
+                              "paymentNotAllowed" |
+                              "storeProductNotAvailable" |
+                              "cloudServicePermissionDenied" |
+                              "cloudServiceNetworkConnectionFailed"
 
     type PurchaseErrorResponse = {
         errorCode: PurchaseErrorCodes | string
