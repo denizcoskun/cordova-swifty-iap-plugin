@@ -2,10 +2,10 @@ declare var SwiftyIAP: PluginSwiftyIAP.SwiftyIAP
 
 declare namespace PluginSwiftyIAP {
 
-    type successHandler<T = any> = (result?: T) => any | (() => any)
-    type errorHandler<K = any> = (error?: K) => any | (() => any)
+    type successHandler<T = any> = (result: T) => any | (() => any)
+    type errorHandler<K = any> = (error?: K) => any
     type Receipt = string; // base64 encoded receipt
-    
+
     type Product = {
         productId: string;
         price: string;
