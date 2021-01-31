@@ -4,8 +4,8 @@ exports.completeTransactions = function (success, error) {
     exec(success, error, 'SwiftyIAP', 'completeTransactions', []);
 };
 
-exports.retriveProductsInfo = function (arg0, success, error) {
-    exec(success, error, 'SwiftyIAP', 'retriveProductsInfo', [arg0]);
+exports.retrieveProductsInfo = function (arg0, success, error) {
+    exec(success, error, 'SwiftyIAP', 'retrieveProductsInfo', [arg0]);
 };
 
 exports.fetchReceipt = function (arg0, success, error) {

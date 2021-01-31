@@ -18,8 +18,8 @@ class SwiftyIAP: CDVPlugin {
         }
     }
     
-    @objc(retriveProductsInfo:)
-    func retriveProductsInfo(_ command: CDVInvokedUrlCommand) {
+    @objc(retrieveProductsInfo:)
+    func retrieveProductsInfo(_ command: CDVInvokedUrlCommand) {
         self.commandCallback = command.callbackId as String
         guard let productIds = command.arguments[0] as? [String] else {
             return self.sendResult(.init(status: CDVCommandStatus_ERROR, messageAs: "productId  not found"))

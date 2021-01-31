@@ -32,7 +32,7 @@ declare namespace CordovaPlugin {
     interface SwiftyIAP {
         completeTransactions(successHandler: successHandler): void
 
-        retriveProductsInfo(productIds: string[], success: successHandler<Product[]>, error: errorHandler): void
+        retrieveProductsInfo(productIds: string[], success: successHandler<Product[]>, error: errorHandler): void
 
         purchaseProduct(productId: string, success: successHandler<{transactionIdentifier: string}>, error: errorHandler<PurchaseErrorResponse>): void
 
