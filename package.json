@@ -6,7 +6,35 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Coskun Deniz",
+  "author": {
+    "name": "Coskun Deniz <c.deniz@gmail.com>",
+    "url": "https://github.com/denizcoskun"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/denizcoskun/cordova-swifty-iap-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/denizcoskun/cordova-swifty-iap-plugin/issues"
+  },
   "license": "MIT",
-  "types": "@types/index.d.ts"
+  "types": "@types/index.d.ts",
+  "keywords": [
+      "ecosystem:cordova",
+      "cordova-ios"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "0.0.1": {
+        "cordova": ">=9.0.0",
+        "cordova-ios": ">=5.0.0"
+      }
+    }
+  },
+  "cordova": {
+    "id": "cordova-swifty-iap-plugin",
+    "platforms": [
+      "ios"
+    ]
+  }
 }

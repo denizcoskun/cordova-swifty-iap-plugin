@@ -38,7 +38,7 @@ The type definitions are available within this package.
 You can use them by simply installing the package in your typescript project.
 
 ```
-npm install https://github.com/denizcoskun/cordova-swifty-iap-plugin.git
+npm install cordova-swifty-iap-plugin
 ```
 
 After installing the package, you can use the types by adding a reference to them in your project
