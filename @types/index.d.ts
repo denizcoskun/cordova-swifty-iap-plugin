@@ -34,7 +34,7 @@ declare namespace CordovaPlugin {
 
         retrieveProductsInfo(productIds: string[], success: successHandler<Product[]>, error: errorHandler): void
 
-        purchaseProduct(productId: string, success: successHandler<{transactionIdentifier: string}>, error: errorHandler<PurchaseErrorResponse>): void
+        purchaseProduct(productId: string, success: successHandler<{transactionIdentifier: string, originalTransactionId: string}>, error: errorHandler<PurchaseErrorResponse>): void
 
         fetchReceipt(forcedRefresh: boolean, success: successHandler<Receipt>, error: errorHandler): void
 

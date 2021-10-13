@@ -69,7 +69,10 @@ class SwiftyIAP: CDVPlugin {
             case .success(let purchase):
                 
                 self.sendResult(.init(status: CDVCommandStatus_OK,
-                                      messageAs: ["transactionIdentifier": purchase.transaction.transactionIdentifier ?? ""]))
+                                      messageAs: [
+                                          "transactionIdentifier": purchase.transaction.transactionIdentifier ?? "",
+                                          "originalTransactionId": purchase.originalTransaction?.transactionIdentifier ?? ""
+                                          ]))
             case .error(let error):
                 var errorString = ""
                 switch error.code {

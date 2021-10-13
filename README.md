@@ -3,7 +3,7 @@
 This is an iOS cordova plugin based on [SwiftyStoreKit](https://github.com/bizz84/SwiftyStoreKit) to manage in-app purchases
 
 
-⚠️ This is quite a new plugin and it can do only basic tasks, we have not included all functionalities that **SwiftyStoreKit** has yet.
+⚠️ This plugin can do only some basic tasks, we have not included all functionalities that **SwiftyStoreKit** has yet.
 
 **✅️ Pull Requests and any kind of feedback are very much appreciated.**
 
